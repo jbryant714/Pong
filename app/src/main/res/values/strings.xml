@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pong For The Single Person _ Bryantja18</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="game_styles">
+        <item>Single Player</item>
+        <item>Two Player</item>
+        <item>Against Easy Computer</item>
+        <item>Against Hard Computer</item>
+        <item>Against Impossible Computer</item>
+    </string-array>
+</resources>

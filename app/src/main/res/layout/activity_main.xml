@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="#1658e5"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Spinner
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameSpinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adjust Ball Size:"
+            android:id="@+id/ballSizeText" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ballSizeBar"
+            android:progress="5"
+            android:max="95"
+            android:layout_weight=".5" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Ball"
+            android:id="@+id/newBallButton"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adjust Paddle Size:"
+            android:id="@+id/paddleSizeText" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paddleSizeBar"
+            android:max="300"
+            android:layout_weight="0.53"
+            android:progress="100" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:id="@+id/newGameButton"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.example.jacob.pongforthesingleperson_bryantja18.AnimationSurface
+            android:id="@+id/animationSurface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.example.jacob.pongforthesingleperson_bryantja18.AnimationSurface>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/opponentScore"
+            android:background="#00ffffff"
+            android:paddingStart="150dp"
+            android:paddingTop="50dp"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/playerScore"
+            android:layout_gravity="right|top"
+            android:paddingEnd="150dp"
+            android:paddingTop="50dp"
+            android:textSize="50sp" />
+    </FrameLayout>
+
+</LinearLayout>
+    
